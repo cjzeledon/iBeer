@@ -30,7 +30,7 @@ img{
     display: block;
 }
 .wrapper{
-    width: 1000px;
+    width: 1300px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,6 @@ img{
     */
 }
 #site-header{
-flex-basis: auto;
 
     /*
         TODO
@@ -53,7 +52,7 @@ flex-basis: auto;
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-    background-image: image(file:///Users/claudiazeledon/Documents/Daily_Projects/iBeer/ibeer_starter_files/img/header-img.jpg);
+    background-image: url(img/header-img.jpg);
 
 
     /*
@@ -86,10 +85,9 @@ flex-basis: auto;
 }
 #main-navigation{
     background: #444;
-
-
-
-
+    align-item: center;
+    display: flex;
+    justify-content: flex-end;
     /*
         TODO:
         - Use Flexbox to arrange the navigation links
@@ -104,13 +102,16 @@ flex-basis: auto;
 
 
 
+
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
     */
+
 }
 #main-navigation #logo{
     margin-right: 400px;
+
 
     /*
         TODO:
@@ -122,6 +123,10 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 60%;
+    margin-left: 40px;
+    position: relative;
+    bottom: 70px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -132,6 +137,8 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    max-width: 30%;
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
