@@ -30,10 +30,11 @@ img{
     display: block;
 }
 .wrapper{
-    width: 1300px;
+    width: 1000px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     /*
         TODO:
         - Center up the page
@@ -42,7 +43,7 @@ img{
     */
 }
 #site-header{
-
+  width: 100%;
     /*
         TODO
         - Flexbox property here
@@ -53,14 +54,11 @@ img{
     padding: 60px 0 120px 0;
     font-size: 4em;
     background-image: url(img/header-img.jpg);
-
-
     /*
-        TODO:
+        TODO (DONE):
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
-
     background-size: cover;
     background-position: right bottom;
 }
@@ -69,7 +67,6 @@ img{
     margin: 0;
     line-height: 1;
     position: relative;
-
 }
 #site-header div h1{
     top: 20px;
@@ -78,8 +75,9 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script';
     /*
-        TODO:
+        TODO (DONE):
         - Use the script font: 'Dancing Script' fot this text
     */
 }
@@ -99,10 +97,6 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
-
-
-
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
@@ -111,8 +105,6 @@ img{
 }
 #main-navigation #logo{
     margin-right: 400px;
-
-
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
@@ -137,15 +129,14 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    max-width: 30%;
-    align-self: flex-end;
-    align-items: flex-start;
-    flex-basis: 10%;
+    max-width: 20%;
     position: relative;
-    bottom: 3148px;
-    right: 12px;
-
-
+    bottom: 70px;
+/*    align-self: flex-end;
+    align-items: flex-start;
+/*    position: relative;
+    bottom: 1954px;
+    right: 80px; */
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -198,18 +189,28 @@ padding-bottom: 20px;
     */
 }
 article footer p{
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  text-transform: uppercase;
+  clear:both;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
     /*
-        TODO:
+        TODO (DONE):
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-  text-align: center;
-  padding: 60px 0 80px 0;
-  font-size: 3em;
-  font: #fff;
+    color: white;
+    text-align:center;
     background: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     /*
         TODO:
         - Style the site footer
