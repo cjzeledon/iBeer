@@ -206,11 +206,10 @@ article footer p{
 }
 #site-footer{
     color: white;
-    text-align:center;
     background: #333;
     padding: 20px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
     /*
         TODO:
         - Style the site footer
